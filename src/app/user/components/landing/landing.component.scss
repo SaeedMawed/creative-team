@@ -1,0 +1,46 @@
+@import '../../../../assets/sass/variables.scss';
+.landing-container{
+    .landing-grid{
+        display: grid;
+        grid-template-columns: 5fr 4fr;
+        height: 100vh;
+        position: relative;
+        @media screen and (max-width:768px) {
+            grid-template-columns: 1fr;
+            height: auto;
+        }
+        .left-sec{
+            height: 100vh;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 70px;
+                font-weight: 700;
+                color: $primary;
+            }
+            p{
+                color: $secondary;
+            }
+            button{
+                font-size: 1.5rem;
+                font-weight: 500;
+                padding: 1rem 4rem;
+                margin-right: auto;
+                background: #ec4683;
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+        .right-sec{
+            height: 100vh;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

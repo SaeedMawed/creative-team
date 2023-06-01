@@ -1,0 +1,50 @@
+@import '../../../../assets/sass/variables.scss';
+.services-container{
+    .title{
+        padding: 0 10rem;
+        h1{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 600;
+            color: $primary;
+        }
+    }
+    .services-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+        margin: 3rem 0;
+        padding: 0 2rem;
+        .card{
+            padding: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            border: 0;
+            
+            .icon{
+                span{
+                    font-size: 70px;
+                    line-height: 6rem;
+                    color: $danger;
+                }
+            }
+            .card-title h3{
+                color: $primary;
+                font-weight: 500;
+            }
+            .card-desc p{
+                color: $secondary;
+                line-height: 2.2rem;
+            }
+
+            &:hover{
+                //outline:3px solid $danger;
+                box-shadow: 0 1rem 1.75rem rgba(0,0,0,.15) !important;
+                transition: all .3s;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

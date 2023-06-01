@@ -1,0 +1,20 @@
+<div class="services-container mycontainer">
+    <div class="title">
+        <h1>What We Will Do For Your Business​</h1>
+    </div>
+    <div class="services-grid">
+        <div class="card shadow" *ngFor="let service of services">
+            <div class="icon">
+                <span class="material-icons-outlined">
+                    {{service.icon}}
+                </span>
+            </div>
+            <div class="card-title">
+                <h3>{{service.title}}</h3>
+            </div>
+            <div class="card-desc">
+                <p>{{service.desc}}</p>
+            </div>
+        </div>
+    </div>
+</div>

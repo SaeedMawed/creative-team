@@ -1,0 +1,44 @@
+@import '../../../../assets/sass/variables.scss';
+.why-choose-us-container{
+    .why-grid{
+        display: grid;
+        grid-template-columns: 5fr 4fr;
+        gap: 0rem;
+        height: 100vh;
+        @media screen and (max-width:768px){
+            grid-template-columns: 1fr;
+            height: auto;
+        }
+    }
+    .left-sec {
+        img{
+            height: 500px;
+            width: 100%;
+            margin-left: -7rem;
+            @media screen and (max-width:768px){
+                margin-left: 0;
+                height: auto;
+            }
+        }
+    }
+    .right-sec{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+        @media screen and (max-width:768px){
+            padding: 1rem 0;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 500;
+            color: $primary;
+            @media screen and (max-width:768px){
+                font-size: 25px;
+            }
+        }
+        p{
+            line-height: 2rem;
+            color: $text-color;
+        }
+    }
+}
